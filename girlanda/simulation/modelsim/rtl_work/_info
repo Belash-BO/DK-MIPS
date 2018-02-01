@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus_Labs\girlanda\simulation\modelsim
+vgirlanda
+I4hnz_RfZ>fX>a1J7znEkX3
+V:Ch]>k^GF3MoOCm3IEIIf0
+Z1 dD:\Quartus_Labs\girlanda\simulation\modelsim
+w1514287490
+8D:/Quartus_Labs/girlanda/girlanda.v
+FD:/Quartus_Labs/girlanda/girlanda.v
+L0 2
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/Quartus_Labs/girlanda -O0
+!i10b 1
+!s100 =f`bm1>f0kE[E0;`aD>fm2
+!s85 0
+!s108 1514287749.121000
+!s107 D:/Quartus_Labs/girlanda/girlanda.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus_Labs/girlanda|D:/Quartus_Labs/girlanda/girlanda.v|
+!s101 -O0
+vgirlanda_tb
+!i10b 1
+!s100 ZLca@n8IE0_fMPa:o?zLg0
+II?3`6`JiN5fZzP[>UC2zE3
+Vf]g<6jM7H]d?PL>7DTa?`1
+R1
+w1514272712
+8D:/Quartus_Labs/girlanda/girlanda_tb.v
+FD:/Quartus_Labs/girlanda/girlanda_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1514287749.461000
+!s107 D:/Quartus_Labs/girlanda/girlanda_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus_Labs/girlanda|D:/Quartus_Labs/girlanda/girlanda_tb.v|
+!s101 -O0
+R3
+R4
+vrejim
+IeIKU5fM:V;C[Rk7L2_<WE0
+Vo`7TRS5Q?gKSDkkBQ6BQk1
+R1
+w1514287487
+8D:/Quartus_Labs/girlanda/rejim.v
+FD:/Quartus_Labs/girlanda/rejim.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ZmR]Ai6ImjXmNoNi<N::d0
+!s85 0
+!s108 1514287749.283000
+!s107 D:/Quartus_Labs/girlanda/rejim.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus_Labs/girlanda|D:/Quartus_Labs/girlanda/rejim.v|
+!s101 -O0

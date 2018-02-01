@@ -1,0 +1,51 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+# File: D:\Quartus_Labs\4004\processor_4004_assignments.csv
+# Generated on: Thu Dec 07 23:57:17 2017
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Differential Pair
+D0_D3[3],Input,PIN_C13,3,B3_N0,PIN_C13,,,,
+D0_D3[2],Input,PIN_D13,3,B3_N0,PIN_D13,,,,
+D0_D3[1],Input,PIN_B12,3,B3_N0,PIN_B12,,,,
+D0_D3[0],Input,PIN_C12,3,B3_N0,PIN_C12,,,,
+altera_reserved_tck,Input,PIN_M6,2,B2_N1,PIN_M6,,,,
+altera_reserved_tdi,Input,PIN_M8,2,B2_N1,PIN_M8,,,,
+altera_reserved_tdo,Output,PIN_M7,2,B2_N1,PIN_M7,,,,
+altera_reserved_tms,Input,PIN_L8,2,B2_N1,PIN_L8,,,,
+carry_out,Output,PIN_E5,2,B2_N0,PIN_E5,,,,
+clk_1,Input,PIN_N2,2,B2_N1,PIN_N2,,,,
+clk_2,Input,PIN_N1,2,B2_N1,PIN_N1,,,,
+data_bus[3],Output,PIN_H4,2,B2_N1,PIN_H4,,,,
+data_bus[2],Output,PIN_B3,2,B2_N0,PIN_B3,,,,
+data_bus[1],Output,PIN_H3,2,B2_N1,PIN_H3,,,,
+data_bus[0],Output,PIN_B2,2,B2_N0,PIN_B2,,,,
+reset,Input,PIN_F6,2,B2_N0,PIN_F6,,,,
+clk,Unknown,,,,,,,,
+Data[3],Unknown,,,,,,,,
+Data[2],Unknown,,,,,,,,
+Data[1],Unknown,,,,,,,,
+Data[0],Unknown,,,,,,,,
+Data_Bus[3],Unknown,,,,,,,,
+Data_Bus[2],Unknown,,,,,,,,
+Data_Bus[1],Unknown,,,,,,,,
+Data_Bus[0],Unknown,,,,,,,,
+WE[1],Unknown,,,,,,,,
+WE[0],Unknown,,,,,,,,
+~LVDS150p/nCEO~,Output,PIN_AE24,6,B6_N1,PIN_AE24,,,,
+~nCSO~,Input,PIN_D3,2,B2_N0,PIN_D3,,,,
+~ASDO~,Input,PIN_E3,2,B2_N0,PIN_E3,,,,

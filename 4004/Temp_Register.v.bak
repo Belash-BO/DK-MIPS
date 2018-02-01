@@ -1,0 +1,21 @@
+
+module Temp_Register
+			(inout	reg	[3:0]	Data_Bus,
+			 input			[1:0]	WE, 
+			 input					clk,
+			 output	reg	[3:0]	Data);
+			 
+			 reg [3:0] R;	 
+			 
+		always @(posedge clk)
+			case (WE)
+				0: R <= R;
+				1:	R <= Data_Bus;
+				2: Data_Bus <= R;
+				default: R <= R;
+			endcase
+			
+		always @(*) 
+				Data <= R;
+
+endmodule	

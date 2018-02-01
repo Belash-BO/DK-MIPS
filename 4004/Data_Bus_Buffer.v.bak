@@ -1,0 +1,25 @@
+
+module Data_Bus_Buffer	(inout	reg	[3:0]	D0_D3,
+			 input			clk, data_bus_buffer_enable,
+			 input		[1:0]	data_bus_buffer_path,
+			 inout	reg	[3:0]	data_bus);
+								 
+		reg	[3:0] buffer;
+			
+		always @(posedge clk_2) 
+			if (!data_bus_buffer_enable) begin
+				case (data_bus_buffer_path)
+					2'b00: buffer <= D0_D3;
+					2'b01: data_bus <= buffer;
+					2'b10: D0_D3 <= buffer;
+					2'b11: buffer <= data_bus;
+					default: buffer <= buffer;
+				endcase
+				data_bus_buffer_enable <= ~data_bus_buffer_enable;
+			end
+			else begin
+				buffer <= D0_D3;
+				data_bus_buffer_enable <= ~data_bus_buffer_enable;
+			end
+endmodule
+	

@@ -1,0 +1,120 @@
+D:/Quartus_Labs/4004/Data_Bus_Buffer.v {1 {vlog -work work D:/Quartus_Labs/4004/Data_Bus_Buffer.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Data_Bus_Buffer
+
+Top level modules:
+	Data_Bus_Buffer
+
+} {} {}} D:/Quartus_Labs/4004/processor_4004_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/processor_4004_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module processor_4004_tb
+
+Top level modules:
+	processor_4004_tb
+
+} {} {}} D:/Quartus_Labs/4004/Control_Unit_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/Control_Unit_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Control_Unit_tb
+
+Top level modules:
+	Control_Unit_tb
+
+} {} {}} D:/Quartus_Labs/4004/ALU_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/ALU_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU_tb
+
+Top level modules:
+	ALU_tb
+
+} {} {}} D:/Quartus_Labs/4004/Control_Unit.v {1 {vlog -work work D:/Quartus_Labs/4004/Control_Unit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} D:/Quartus_Labs/lab_6a/pc.v {1 {vlog -work work D:/Quartus_Labs/lab_6a/pc.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} D:/Quartus_Labs/4004/Index_Register_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/Index_Register_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Index_Register_tb
+
+Top level modules:
+	Index_Register_tb
+
+} {} {}} D:/Quartus_Labs/4004/ALU.v {1 {vlog -work work D:/Quartus_Labs/4004/ALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/Quartus_Labs/4004/Index_Register.v {1 {vlog -work work D:/Quartus_Labs/4004/Index_Register.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Index_Register
+
+Top level modules:
+	Index_Register
+
+} {} {}} D:/Quartus_Labs/4004/Instruction_Register_and_Decoder.v {1 {vlog -work work D:/Quartus_Labs/4004/Instruction_Register_and_Decoder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Instruction_Register_and_Decoder
+
+Top level modules:
+	Instruction_Register_and_Decoder
+
+} {} {}} D:/Quartus_Labs/4004/Accumulator_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/Accumulator_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Accumulator_tb
+
+Top level modules:
+	Accumulator_tb
+
+} {} {}} D:/Quartus_Labs/4004/processor_4004.v {1 {vlog -work work D:/Quartus_Labs/4004/processor_4004.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module processor_4004
+
+Top level modules:
+	processor_4004
+
+} {} {}} D:/Quartus_Labs/4004/Temp_Register_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/Temp_Register_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Temp_Register_tb
+
+Top level modules:
+	Temp_Register_tb
+
+} {} {}} D:/Quartus_Labs/4004/Accumulator.v {1 {vlog -work work D:/Quartus_Labs/4004/Accumulator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Accumulator
+
+Top level modules:
+	Accumulator
+
+} {} {}} D:/Quartus_Labs/4004/Data_Bus_Buffer_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/Data_Bus_Buffer_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Data_Bus_Buffer_tb
+
+Top level modules:
+	Data_Bus_Buffer_tb
+
+} {} {}} D:/Quartus_Labs/4004/Instruction_Register_and_Decoder_tb.v {1 {vlog -work work D:/Quartus_Labs/4004/Instruction_Register_and_Decoder_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Instruction_Register_and_Decoder_tb
+
+Top level modules:
+	Instruction_Register_and_Decoder_tb
+
+} {} {}} D:/Quartus_Labs/4004/Temp_Register.v {1 {vlog -work work D:/Quartus_Labs/4004/Temp_Register.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Temp_Register
+
+Top level modules:
+	Temp_Register
+
+} {} {}}

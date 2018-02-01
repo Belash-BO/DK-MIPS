@@ -1,0 +1,22 @@
+D:/Quartus_Labs/girlanda/girlanda.v {1 {vlog -work work D:/Quartus_Labs/girlanda/girlanda.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module girlanda
+
+Top level modules:
+	girlanda
+
+} {} {}} D:/Quartus_Labs/girlanda/girlanda_tb.v {1 {vlog -work work D:/Quartus_Labs/girlanda/girlanda_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module girlanda_tb
+
+Top level modules:
+	girlanda_tb
+
+} {} {}} D:/Quartus_Labs/girlanda/rejim.v {1 {vlog -work work D:/Quartus_Labs/girlanda/rejim.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rejim
+
+Top level modules:
+	rejim
+
+} {} {}}

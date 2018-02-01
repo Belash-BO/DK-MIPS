@@ -1,0 +1,341 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus_Labs\lab_5
+vAdder
+Z1 !s100 e`53lTJ0@?;N6z8]=HV`k0
+Z2 IS3Cf]]TbU7@9IC_Nc[Efa2
+Z3 VdPPQ1Ol2Z8bKXVRm9Hao71
+Z4 dD:\Quartus_Labs\lab_6
+Z5 w1490393145
+Z6 8D:/Quartus_Labs/lab_6/Adder.v
+Z7 FD:/Quartus_Labs/lab_6/Adder.v
+L0 3
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/Adder.v|
+Z10 o-work work -O0
+Z11 n@adder
+Z12 !s108 1513063834.672000
+Z13 !s107 D:/Quartus_Labs/lab_6/Adder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z14 !s100 8ZXCHK[1GE1a]g8iNH=o81
+Z15 IeFdKhzCUj]TCf>Z557?jz2
+Z16 VTMMOgF[GZOdY;n=LmRhed2
+R4
+Z17 w1509396517
+Z18 8D:/Quartus_Labs/lab_6/ALU.v
+Z19 FD:/Quartus_Labs/lab_6/ALU.v
+L0 3
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/ALU.v|
+R10
+Z21 n@a@l@u
+Z22 !s108 1513063834.941000
+Z23 !s107 D:/Quartus_Labs/lab_6/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vAlu_Control
+Z24 !s100 Z_Aga@AMYdcoFmZfSnn:]0
+Z25 IFoh4EbRP;N8SUWLGSkMFK1
+Z26 V6VQiIEej10;O<emobDb9o2
+R4
+Z27 w1509040186
+Z28 8D:/Quartus_Labs/lab_6/Alu_Control.v
+Z29 FD:/Quartus_Labs/lab_6/Alu_Control.v
+L0 2
+R8
+r1
+31
+Z30 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/Alu_Control.v|
+R10
+Z31 n@alu_@control
+Z32 !s108 1513063835.266000
+Z33 !s107 D:/Quartus_Labs/lab_6/Alu_Control.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vControl
+Z34 !s100 8a]GNMJlTW2bC;d6[SgkZ2
+Z35 InXcX:XPPez794Wf;zkj7H0
+Z36 VbhCI7RfHFf7aNFozzYN^M3
+R4
+Z37 w1510566150
+Z38 8D:/Quartus_Labs/lab_6/Control.v
+Z39 FD:/Quartus_Labs/lab_6/Control.v
+L0 2
+R8
+r1
+31
+Z40 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/Control.v|
+R10
+Z41 n@control
+Z42 !s108 1513063835.607000
+Z43 !s107 D:/Quartus_Labs/lab_6/Control.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vExtender
+Z44 !s100 SFY_me>P[8iZV@7FIm`ia1
+Z45 IL6V4<kkW^ZR823>i:`71h1
+Z46 VSiZ:z?_EMdanNgGh>`Fja2
+R4
+Z47 w1490682451
+Z48 8D:/Quartus_Labs/lab_6/Extender.v
+Z49 FD:/Quartus_Labs/lab_6/Extender.v
+L0 3
+R8
+r1
+31
+Z50 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/Extender.v|
+R10
+Z51 n@extender
+Z52 !s108 1513063835.943000
+Z53 !s107 D:/Quartus_Labs/lab_6/Extender.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vLogicUnit
+Z54 !s100 =jh[SCg70PWZI:>H;Q<fU2
+Z55 Iaic0>>_85QG`jha<n`3I42
+Z56 VLnb>aL`WKk0gzJ3zzBill0
+R4
+Z57 w1490472518
+Z58 8D:/Quartus_Labs/lab_6/LogicUnit.v
+Z59 FD:/Quartus_Labs/lab_6/LogicUnit.v
+L0 3
+R8
+r1
+31
+Z60 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/LogicUnit.v|
+R10
+Z61 n@logic@unit
+Z62 !s108 1513063836.441000
+Z63 !s107 D:/Quartus_Labs/lab_6/LogicUnit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMIPS
+Z64 !s100 M[Ab4KEA_7?;Gac`AOPj`3
+Z65 IV6372RlnjcLV0`OZo`:il2
+Z66 VQKHYjH3@<DLOEdG4TI^<I0
+R4
+Z67 w1510561072
+Z68 8D:/Quartus_Labs/lab_6/MIPS.v
+Z69 FD:/Quartus_Labs/lab_6/MIPS.v
+L0 2
+R8
+r1
+31
+Z70 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/MIPS.v|
+R10
+Z71 n@m@i@p@s
+Z72 !s108 1513063836.680000
+Z73 !s107 D:/Quartus_Labs/lab_6/MIPS.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMIPS_tb
+Z74 !s100 8=QX7zm;4kGDcO;RAL9j42
+Z75 I>V]gC8[]Vg[14ZlWfgaMR1
+Z76 Vden@eS]YPD:^m5PPL_Jk31
+R4
+Z77 w1509439148
+Z78 8D:/Quartus_Labs/lab_6/MIPS_tb.v
+Z79 FD:/Quartus_Labs/lab_6/MIPS_tb.v
+L0 3
+R8
+r1
+31
+Z80 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/MIPS_tb.v|
+R10
+Z81 n@m@i@p@s_tb
+Z82 !s108 1513063836.992000
+Z83 !s107 D:/Quartus_Labs/lab_6/MIPS_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2in1
+Z84 !s100 [QP47T2njaJSM8Rzz<8ll2
+Z85 I4WP[[Jf<SEf4=Eko?k1hW2
+Z86 VOcE2AeHAzV11Z`89NM1Fm3
+R4
+Z87 w1509392227
+Z88 8D:/Quartus_Labs/lab_6/mux2in1.v
+Z89 FD:/Quartus_Labs/lab_6/mux2in1.v
+L0 2
+R8
+r1
+31
+Z90 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/mux2in1.v|
+R10
+Z91 !s108 1513063837.397000
+Z92 !s107 D:/Quartus_Labs/lab_6/mux2in1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vnext_pc
+!i10b 1
+Z93 !s100 LI[g[3k>Q_DmmgBo>?0zL3
+Z94 IfNZ_4GSfR`VL]KG^7T[RQ3
+Z95 VKEc6k^;k7;5=NS`oSXAhC2
+R4
+Z96 w1510522705
+Z97 8D:/Quartus_Labs/lab_6/next_pc.v
+Z98 FD:/Quartus_Labs/lab_6/next_pc.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1513063839.830000
+!s107 D:/Quartus_Labs/lab_6/next_pc.v|
+Z99 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/next_pc.v|
+!s101 -O0
+R10
+vpc
+Z100 !s100 4H]zz=<l@`mXjB>Bm:=Ia3
+Z101 I=[AXBeB3A<Qa2oZjC`gFO2
+Z102 Vc=GPQI@icokAj?WoLPD091
+R4
+Z103 w1509439871
+Z104 8D:/Quartus_Labs/lab_6/pc.v
+Z105 FD:/Quartus_Labs/lab_6/pc.v
+L0 2
+R8
+r1
+31
+Z106 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/pc.v|
+R10
+Z107 !s108 1513063837.811000
+Z108 !s107 D:/Quartus_Labs/lab_6/pc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRam
+Z109 !s100 Y:Mjm;9P9VkhzGg@TKinz3
+Z110 I;V]AbCnO<Zj94QkF78?Ca2
+Z111 V[Y34EUDf]5_z[=T26;:<32
+R4
+Z112 w1510510835
+Z113 8D:/Quartus_Labs/lab_6/Ram.v
+Z114 FD:/Quartus_Labs/lab_6/Ram.v
+L0 2
+R8
+r1
+31
+Z115 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/Ram.v|
+R10
+n@ram
+Z116 !s108 1513063838.057000
+Z117 !s107 D:/Quartus_Labs/lab_6/Ram.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vregFile
+Z118 !s100 SH1N?g<5jHR?:gDJ3Z=Fz1
+Z119 IC12:f[lcd7l1VeO:?nhfH3
+Z120 VZc6`0d0SIML2CcG;]J0io1
+R4
+Z121 w1509437305
+Z122 8D:/Quartus_Labs/lab_6/regFile.v
+Z123 FD:/Quartus_Labs/lab_6/regFile.v
+L0 2
+R8
+r1
+31
+Z124 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/regFile.v|
+R10
+Z125 nreg@file
+Z126 !s108 1513063838.287000
+Z127 !s107 D:/Quartus_Labs/lab_6/regFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRom
+Z128 !s100 <@oL=a0e9S=k^K4j3PFS11
+Z129 I7=<`E_4o[Ub[DLC5G;11[1
+Z130 V?ICGY2A:Qg4I<P9E^?dRV2
+R4
+Z131 w1509433141
+Z132 8D:/Quartus_Labs/lab_6/Rom.v
+Z133 FD:/Quartus_Labs/lab_6/Rom.v
+L0 2
+R8
+r1
+31
+Z134 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/Rom.v|
+R10
+n@rom
+Z135 !s108 1513063838.524000
+Z136 !s107 D:/Quartus_Labs/lab_6/Rom.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vShifter
+Z137 !s100 dTzTN0Q7Ldo[a?cb]JdBW2
+Z138 INQMVcDB;2Mchdj7bnDJF42
+Z139 VY?>[?R?hlOdo6OAb?Z:Q63
+R4
+Z140 w1490390341
+Z141 8D:/Quartus_Labs/lab_6/Shifter.v
+Z142 FD:/Quartus_Labs/lab_6/Shifter.v
+L0 3
+R8
+r1
+31
+Z143 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/Shifter.v|
+R10
+Z144 n@shifter
+Z145 !s108 1513063838.820000
+Z146 !s107 D:/Quartus_Labs/lab_6/Shifter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsignExtend
+Z147 !s100 G8CVL8DHjH:bS@IMWoZDY0
+Z148 IOo2[;k2]mzLh`9c]JVW_e3
+Z149 VSIzP:9k[X<1E8kQ4o96?C3
+R4
+Z150 w1509393506
+Z151 8D:/Quartus_Labs/lab_6/signExtend.v
+Z152 FD:/Quartus_Labs/lab_6/signExtend.v
+L0 1
+R8
+r1
+31
+Z153 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/signExtend.v|
+R10
+Z154 nsign@extend
+Z155 !s108 1513063839.121000
+Z156 !s107 D:/Quartus_Labs/lab_6/signExtend.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsum4
+Z157 !s100 d[;ENI3H_DZSH=WYC1z?21
+Z158 IR0gL_X@`9CXgmZza9Ei2T1
+Z159 VFb>meH=QbzWD7mn]0ejCM0
+R4
+Z160 w1509432469
+Z161 8D:/Quartus_Labs/lab_6/sum4.v
+Z162 FD:/Quartus_Labs/lab_6/sum4.v
+L0 2
+R8
+r1
+31
+Z163 !s90 -reportprogress|300|-work|work|D:/Quartus_Labs/lab_6/sum4.v|
+R10
+!i10b 1
+!s85 0
+Z164 !s108 1513063839.476000
+Z165 !s107 D:/Quartus_Labs/lab_6/sum4.v|
+!s101 -O0

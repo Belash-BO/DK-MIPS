@@ -1,0 +1,1294 @@
+TimeQuest Timing Analyzer report for 4004
+Mon Dec 11 11:21:03 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Setup: 'clk1'
+ 13. Slow Model Hold: 'clk1'
+ 14. Slow Model Minimum Pulse Width: 'clk1'
+ 15. Slow Model Minimum Pulse Width: 'altera_reserved_tck'
+ 16. Setup Times
+ 17. Hold Times
+ 18. Clock to Output Times
+ 19. Minimum Clock to Output Times
+ 20. Output Enable Times
+ 21. Minimum Output Enable Times
+ 22. Output Disable Times
+ 23. Minimum Output Disable Times
+ 24. Fast Model Setup Summary
+ 25. Fast Model Hold Summary
+ 26. Fast Model Recovery Summary
+ 27. Fast Model Removal Summary
+ 28. Fast Model Minimum Pulse Width Summary
+ 29. Fast Model Setup: 'clk1'
+ 30. Fast Model Hold: 'clk1'
+ 31. Fast Model Minimum Pulse Width: 'clk1'
+ 32. Fast Model Minimum Pulse Width: 'altera_reserved_tck'
+ 33. Setup Times
+ 34. Hold Times
+ 35. Clock to Output Times
+ 36. Minimum Clock to Output Times
+ 37. Output Enable Times
+ 38. Minimum Output Enable Times
+ 39. Output Disable Times
+ 40. Minimum Output Disable Times
+ 41. Multicorner Timing Analysis Summary
+ 42. Setup Times
+ 43. Hold Times
+ 44. Clock to Output Times
+ 45. Minimum Clock to Output Times
+ 46. Setup Transfers
+ 47. Hold Transfers
+ 48. Report TCCS
+ 49. Report RSKM
+ 50. Unconstrained Paths
+ 51. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; 4004                                               ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C35F672C6                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------+
+; SDC File List                                     ;
++---------------+--------+--------------------------+
+; SDC File Path ; Status ; Read at                  ;
++---------------+--------+--------------------------+
+; 4004.sdc      ; OK     ; Mon Dec 11 11:21:02 2017 ;
++---------------+--------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                    ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; Clock Name          ; Type ; Period  ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                 ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; altera_reserved_tck ; Base ; 100.000 ; 10.0 MHz  ; 0.000 ; 50.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { altera_reserved_tck } ;
+; clk1                ; Base ; 10.000  ; 100.0 MHz ; 0.000 ; 5.000  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_2 }               ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 103.33 MHz ; 103.33 MHz      ; clk1       ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------+
+; Slow Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk1  ; 0.322 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk1  ; 0.391 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------------+
+; Slow Model Minimum Pulse Width Summary       ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; clk1                ; 4.000  ; 0.000         ;
+; altera_reserved_tck ; 97.778 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk1'                                                                                                                                                                                                        ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                                  ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.322 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.648     ; 6.330      ;
+; 0.382 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 6.050      ;
+; 0.382 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 6.050      ;
+; 0.393 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 6.039      ;
+; 0.396 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 6.252      ;
+; 0.404 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 6.028      ;
+; 0.423 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.478     ; 6.399      ;
+; 0.518 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 6.130      ;
+; 0.564 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.648     ; 6.088      ;
+; 0.619 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 6.029      ;
+; 0.648 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.478     ; 6.174      ;
+; 0.651 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 5.781      ;
+; 0.651 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 5.781      ;
+; 0.661 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.987      ;
+; 0.662 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 5.770      ;
+; 0.673 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.868     ; 5.759      ;
+; 0.775 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.648     ; 5.877      ;
+; 0.792 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.856      ;
+; 0.898 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.478     ; 5.924      ;
+; 0.912 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.648     ; 5.740      ;
+; 0.914 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.734      ;
+; 0.920 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.478     ; 5.902      ;
+; 0.991 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.659     ; 5.650      ;
+; 1.018 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.630      ;
+; 1.042 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.606      ;
+; 1.048 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.600      ;
+; 1.059 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.589      ;
+; 1.065 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.583      ;
+; 1.097 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.551      ;
+; 1.170 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.478      ;
+; 1.181 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.467      ;
+; 1.340 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.308      ;
+; 1.439 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.209      ;
+; 1.445 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.203      ;
+; 1.497 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.151      ;
+; 1.559 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.089      ;
+; 1.598 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.050      ;
+; 1.614 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.034      ;
+; 1.625 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 5.023      ;
+; 1.704 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -2.652     ; 4.944      ;
+; 3.233 ; D0_D3[0]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 10.000       ; 2.663      ; 6.216      ;
+; 3.555 ; D0_D3[1]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 10.000       ; 2.663      ; 5.894      ;
+; 4.292 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 5.539      ;
+; 4.440 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 5.392      ;
+; 4.440 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 5.392      ;
+; 4.440 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 5.392      ;
+; 4.440 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 5.392      ;
+; 4.896 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 4.935      ;
+; 5.027 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.205     ; 4.804      ;
+; 5.044 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.788      ;
+; 5.044 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.788      ;
+; 5.044 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.788      ;
+; 5.044 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.788      ;
+; 5.064 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 4.767      ;
+; 5.203 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 4.628      ;
+; 5.212 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.620      ;
+; 5.212 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.620      ;
+; 5.212 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.620      ;
+; 5.212 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.620      ;
+; 5.351 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.481      ;
+; 5.351 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.481      ;
+; 5.351 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.481      ;
+; 5.351 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 4.481      ;
+; 5.502 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 4.329      ;
+; 5.675 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.205     ; 4.156      ;
+; 5.799 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.205     ; 4.032      ;
+; 5.938 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.205     ; 3.893      ;
+; 6.011 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.214     ; 3.811      ;
+; 6.105 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 3.726      ;
+; 6.156 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.213     ; 3.667      ;
+; 6.156 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.213     ; 3.667      ;
+; 6.156 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.213     ; 3.667      ;
+; 6.156 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.213     ; 3.667      ;
+; 6.244 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.834     ; 2.958      ;
+; 6.273 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 3.558      ;
+; 6.366 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.834     ; 2.836      ;
+; 6.389 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.843     ; 2.804      ;
+; 6.412 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.205     ; 3.419      ;
+; 6.497 ; D0_D3[2]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 10.000       ; 2.663      ; 2.952      ;
+; 6.506 ; D0_D3[3]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 10.000       ; 2.663      ; 2.943      ;
+; 6.601 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.834     ; 2.601      ;
+; 6.602 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.834     ; 2.600      ;
+; 6.794 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 10.000       ; 0.009      ; 3.251      ;
+; 7.044 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 10.000       ; 0.216      ; 3.208      ;
+; 7.154 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 10.000       ; 0.000      ; 2.882      ;
+; 7.181 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 2.651      ;
+; 7.182 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 2.650      ;
+; 7.191 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 10.000       ; -0.183     ; 2.662      ;
+; 7.268 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.204     ; 2.564      ;
+; 7.322 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 10.000       ; 0.000      ; 2.714      ;
+; 7.360 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 10.000       ; 0.207      ; 2.883      ;
+; 7.369 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.211     ; 2.456      ;
+; 7.401 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 10.000       ; 0.009      ; 2.644      ;
+; 7.436 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 10.000       ; -0.183     ; 2.417      ;
+; 7.447 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.214     ; 2.375      ;
+; 7.447 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.214     ; 2.375      ;
+; 7.513 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 10.000       ; 0.216      ; 2.739      ;
+; 7.569 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 10.000       ; 0.009      ; 2.476      ;
+; 7.587 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 10.000       ; -0.009     ; 2.440      ;
+; 7.702 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 10.000       ; 0.009      ; 2.343      ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk1'                                                                                                                                                                                                         ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                                  ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|instruction_register_WE  ; clk1         ; clk1        ; 0.000        ; 0.000      ; 0.657      ;
+; 0.633 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.000      ; 0.899      ;
+; 1.124 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.004     ; 1.386      ;
+; 1.293 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.004     ; 1.555      ;
+; 1.478 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; 0.000      ; 1.744      ;
+; 1.561 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.004     ; 1.823      ;
+; 1.700 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 2.182      ;
+; 1.702 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; 0.207      ; 2.175      ;
+; 1.726 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; 0.000      ; 1.992      ;
+; 1.760 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 2.242      ;
+; 1.764 ; D0_D3[3]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 0.000        ; 2.663      ; 2.943      ;
+; 1.773 ; D0_D3[2]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 0.000        ; 2.663      ; 2.952      ;
+; 1.810 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 2.292      ;
+; 1.870 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.138      ;
+; 1.870 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.138      ;
+; 1.870 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.138      ;
+; 1.870 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.138      ;
+; 1.975 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.004     ; 2.237      ;
+; 1.995 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 2.477      ;
+; 2.004 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.272      ;
+; 2.004 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.272      ;
+; 2.004 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.272      ;
+; 2.004 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 2.272      ;
+; 2.008 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 2.490      ;
+; 2.045 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 2.527      ;
+; 2.068 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.009      ; 2.343      ;
+; 2.183 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; -0.009     ; 2.440      ;
+; 2.201 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.009      ; 2.476      ;
+; 2.257 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 2.739      ;
+; 2.323 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.214     ; 2.375      ;
+; 2.323 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.214     ; 2.375      ;
+; 2.334 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 0.000        ; -0.183     ; 2.417      ;
+; 2.369 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.009      ; 2.644      ;
+; 2.401 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.211     ; 2.456      ;
+; 2.410 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; 0.207      ; 2.883      ;
+; 2.448 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; 0.000      ; 2.714      ;
+; 2.502 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 2.564      ;
+; 2.579 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 0.000        ; -0.183     ; 2.662      ;
+; 2.588 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 2.650      ;
+; 2.589 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 2.651      ;
+; 2.616 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 0.000        ; 0.000      ; 2.882      ;
+; 2.726 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; 0.216      ; 3.208      ;
+; 2.976 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.009      ; 3.251      ;
+; 3.168 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.834     ; 2.600      ;
+; 3.169 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.834     ; 2.601      ;
+; 3.358 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 3.419      ;
+; 3.381 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.843     ; 2.804      ;
+; 3.404 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.834     ; 2.836      ;
+; 3.497 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 3.558      ;
+; 3.526 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.834     ; 2.958      ;
+; 3.614 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.213     ; 3.667      ;
+; 3.614 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.213     ; 3.667      ;
+; 3.614 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.213     ; 3.667      ;
+; 3.614 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.213     ; 3.667      ;
+; 3.665 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 3.726      ;
+; 3.759 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.214     ; 3.811      ;
+; 3.832 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.205     ; 3.893      ;
+; 3.971 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.205     ; 4.032      ;
+; 4.095 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.205     ; 4.156      ;
+; 4.268 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 4.329      ;
+; 4.419 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.481      ;
+; 4.419 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.481      ;
+; 4.419 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.481      ;
+; 4.419 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.481      ;
+; 4.558 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.620      ;
+; 4.558 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.620      ;
+; 4.558 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.620      ;
+; 4.558 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.620      ;
+; 4.567 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 4.628      ;
+; 4.706 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 4.767      ;
+; 4.715 ; D0_D3[1]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 0.000        ; 2.663      ; 5.894      ;
+; 4.726 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.788      ;
+; 4.726 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.788      ;
+; 4.726 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.788      ;
+; 4.726 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 4.788      ;
+; 4.743 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.205     ; 4.804      ;
+; 4.874 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 4.935      ;
+; 5.037 ; D0_D3[0]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 0.000        ; 2.663      ; 6.216      ;
+; 5.330 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 5.392      ;
+; 5.330 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 5.392      ;
+; 5.330 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 5.392      ;
+; 5.330 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.204     ; 5.392      ;
+; 5.478 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.205     ; 5.539      ;
+; 7.388 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 4.636      ;
+; 7.393 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 4.641      ;
+; 7.520 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 4.768      ;
+; 7.554 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -2.868     ; 4.586      ;
+; 7.581 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 4.829      ;
+; 7.685 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 4.933      ;
+; 7.707 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[0]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 4.955      ;
+; 7.707 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[2]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 4.955      ;
+; 7.797 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[0]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 5.045      ;
+; 7.797 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[2]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 5.045      ;
+; 7.852 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 5.100      ;
+; 7.863 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[0]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 5.111      ;
+; 7.863 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[2]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 5.111      ;
+; 7.903 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ; data_bus[2]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 5.151      ;
+; 7.961 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -2.652     ; 5.209      ;
+; 7.972 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -2.868     ; 5.004      ;
+; 7.974 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -2.868     ; 5.006      ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk1'                                                                                                                                     ;
++-------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                     ;
++-------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------------------------------------------+
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_enable                                                     ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_enable                                                     ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_operation                                                  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_operation                                                  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[0]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[0]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[1]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[1]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_I_WE                                            ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_I_WE                                            ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[0]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[0]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[1]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[1]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[2]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[2]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[3]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[3]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|temp_register_enable                                           ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|temp_register_enable                                           ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|ALU_enable|clk                                                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|ALU_enable|clk                                                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|ALU_operation|clk                                                           ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|ALU_operation|clk                                                           ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[0]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[0]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[1]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[1]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|data_bus_buffer_path[0]|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|data_bus_buffer_path[0]|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[0]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[0]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[1]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[1]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_I_WE|clk                                                     ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_I_WE|clk                                                     ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[0]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[0]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[1]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[1]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[2]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[2]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[3]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[3]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|instruction_register_WE|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|instruction_register_WE|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|temp_register_enable|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|temp_register_enable|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|WE_out|clk                                                               ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|WE_out|clk                                                               ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[0]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[0]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[1]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[1]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[2]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[2]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[3]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[3]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[0]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[0]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[1]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[1]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[2]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[2]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[3]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[3]|clk                              ;
++-------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'altera_reserved_tck'                                                       ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; Slack  ; Actual Width ; Required Width ; Type      ; Clock               ; Clock Edge ; Target              ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; 97.778 ; 100.000      ; 2.222          ; Port Rate ; altera_reserved_tck ; Rise       ; altera_reserved_tck ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; D0_D3[*]  ; clk1       ; 3.517 ; 3.517 ; Rise       ; clk1            ;
+;  D0_D3[0] ; clk1       ; 3.517 ; 3.517 ; Rise       ; clk1            ;
+;  D0_D3[1] ; clk1       ; 3.195 ; 3.195 ; Rise       ; clk1            ;
+;  D0_D3[2] ; clk1       ; 0.253 ; 0.253 ; Rise       ; clk1            ;
+;  D0_D3[3] ; clk1       ; 0.244 ; 0.244 ; Rise       ; clk1            ;
+; reset     ; clk1       ; 5.968 ; 5.968 ; Rise       ; clk1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D0_D3[*]  ; clk1       ; -0.014 ; -0.014 ; Rise       ; clk1            ;
+;  D0_D3[0] ; clk1       ; -3.287 ; -3.287 ; Rise       ; clk1            ;
+;  D0_D3[1] ; clk1       ; -2.965 ; -2.965 ; Rise       ; clk1            ;
+;  D0_D3[2] ; clk1       ; -0.023 ; -0.023 ; Rise       ; clk1            ;
+;  D0_D3[3] ; clk1       ; -0.014 ; -0.014 ; Rise       ; clk1            ;
+; reset     ; clk1       ; -5.738 ; -5.738 ; Rise       ; clk1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; carry_out    ; clk1       ; 9.426 ; 9.426 ; Rise       ; clk1            ;
+; data_bus[*]  ; clk1       ; 8.978 ; 8.978 ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 8.978 ; 8.978 ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 8.388 ; 8.388 ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 8.877 ; 8.877 ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 8.652 ; 8.652 ; Rise       ; clk1            ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; carry_out    ; clk1       ; 7.859 ; 7.859 ; Rise       ; clk1            ;
+; data_bus[*]  ; clk1       ; 7.288 ; 7.288 ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 7.996 ; 7.996 ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 7.293 ; 7.293 ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 7.702 ; 7.702 ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 7.288 ; 7.288 ; Rise       ; clk1            ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Output Enable Times                                                     ;
++--------------+------------+-------+------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 8.896 ;      ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 8.918 ;      ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 8.896 ;      ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 8.918 ;      ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 8.907 ;      ; Rise       ; clk1            ;
++--------------+------------+-------+------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Output Enable Times                                             ;
++--------------+------------+-------+------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 7.585 ;      ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 7.607 ;      ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 7.585 ;      ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 7.607 ;      ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 7.596 ;      ; Rise       ; clk1            ;
++--------------+------------+-------+------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------+
+; Output Disable Times                                                             ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; Data Port    ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 8.896     ;           ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 8.918     ;           ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 8.896     ;           ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 8.918     ;           ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 8.907     ;           ; Rise       ; clk1            ;
++--------------+------------+-----------+-----------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                     ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; Data Port    ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 7.585     ;           ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 7.607     ;           ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 7.585     ;           ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 7.607     ;           ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 7.596     ;           ; Rise       ; clk1            ;
++--------------+------------+-----------+-----------+------------+-----------------+
+
+
++-------------------------------+
+; Fast Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk1  ; 4.552 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk1  ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------------+
+; Fast Model Minimum Pulse Width Summary       ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; clk1                ; 4.000  ; 0.000         ;
+; altera_reserved_tck ; 97.778 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk1'                                                                                                                                                                                                        ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                                  ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 4.552 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 3.122      ;
+; 4.585 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.624     ; 3.091      ;
+; 4.623 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 3.051      ;
+; 4.686 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.988      ;
+; 4.702 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.624     ; 2.974      ;
+; 4.702 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.972      ;
+; 4.708 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.966      ;
+; 4.744 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.388     ; 3.168      ;
+; 4.772 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.982      ;
+; 4.772 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.982      ;
+; 4.779 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.895      ;
+; 4.785 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.969      ;
+; 4.794 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.960      ;
+; 4.826 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.624     ; 2.850      ;
+; 4.844 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.830      ;
+; 4.855 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.388     ; 3.057      ;
+; 4.857 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.632     ; 2.811      ;
+; 4.860 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.814      ;
+; 4.865 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.809      ;
+; 4.870 ; D0_D3[0]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 10.000       ; 1.636      ; 3.548      ;
+; 4.882 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.792      ;
+; 4.885 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.789      ;
+; 4.888 ; Control_Unit:Control_Unit_1|ALU_operation                                                  ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.624     ; 2.788      ;
+; 4.890 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.784      ;
+; 4.891 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.863      ;
+; 4.891 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.863      ;
+; 4.904 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.850      ;
+; 4.913 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.546     ; 2.841      ;
+; 4.953 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.721      ;
+; 4.961 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.713      ;
+; 4.991 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[0]                                          ; clk1         ; clk1        ; 10.000       ; -1.388     ; 2.921      ;
+; 5.013 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.388     ; 2.899      ;
+; 5.018 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.656      ;
+; 5.020 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.654      ;
+; 5.086 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.588      ;
+; 5.090 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.584      ;
+; 5.095 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[2]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.579      ;
+; 5.105 ; D0_D3[1]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 10.000       ; 1.636      ; 3.313      ;
+; 5.124 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.550      ;
+; 5.132 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.542      ;
+; 5.133 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[1]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.541      ;
+; 5.187 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[3]                                          ; clk1         ; clk1        ; 10.000       ; -1.626     ; 2.487      ;
+; 6.843 ; D0_D3[2]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 10.000       ; 1.636      ; 1.575      ;
+; 6.860 ; D0_D3[3]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 10.000       ; 1.636      ; 1.558      ;
+; 7.165 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.579      ;
+; 7.165 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.579      ;
+; 7.165 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.579      ;
+; 7.165 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.579      ;
+; 7.168 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.576      ;
+; 7.456 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.288      ;
+; 7.460 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.284      ;
+; 7.460 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.284      ;
+; 7.460 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.284      ;
+; 7.460 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.284      ;
+; 7.463 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.281      ;
+; 7.545 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.199      ;
+; 7.545 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.199      ;
+; 7.545 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.199      ;
+; 7.545 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.199      ;
+; 7.548 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.196      ;
+; 7.603 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.141      ;
+; 7.603 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.141      ;
+; 7.603 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.141      ;
+; 7.603 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.141      ;
+; 7.606 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.138      ;
+; 7.721 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 2.023      ;
+; 7.752 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.992      ;
+; 7.836 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.908      ;
+; 7.894 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.850      ;
+; 7.925 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.296     ; 1.811      ;
+; 7.925 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.296     ; 1.811      ;
+; 7.925 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.296     ; 1.811      ;
+; 7.925 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.296     ; 1.811      ;
+; 7.931 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 10.000       ; -0.296     ; 1.805      ;
+; 8.014 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.730      ;
+; 8.023 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.594     ; 1.415      ;
+; 8.094 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.594     ; 1.344      ;
+; 8.098 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.646      ;
+; 8.102 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.602     ; 1.328      ;
+; 8.159 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.585      ;
+; 8.184 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.594     ; 1.254      ;
+; 8.198 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 10.000       ; -0.594     ; 1.240      ;
+; 8.390 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.354      ;
+; 8.396 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 10.000       ; -0.080     ; 1.556      ;
+; 8.405 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.339      ;
+; 8.485 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 10.000       ; -0.288     ; 1.259      ;
+; 8.545 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 10.000       ; 0.008      ; 1.495      ;
+; 8.546 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 10.000       ; -0.294     ; 1.192      ;
+; 8.547 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 10.000       ; -0.246     ; 1.239      ;
+; 8.584 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 10.000       ; -0.088     ; 1.360      ;
+; 8.602 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 10.000       ; -0.296     ; 1.134      ;
+; 8.603 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 10.000       ; -0.296     ; 1.133      ;
+; 8.616 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 10.000       ; -0.080     ; 1.336      ;
+; 8.653 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 10.000       ; -0.246     ; 1.133      ;
+; 8.686 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 10.000       ; 0.000      ; 1.346      ;
+; 8.709 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 10.000       ; 0.000      ; 1.323      ;
+; 8.761 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 10.000       ; -0.080     ; 1.191      ;
+; 8.762 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 10.000       ; -0.080     ; 1.190      ;
+; 8.790 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 10.000       ; -0.080     ; 1.162      ;
+; 8.839 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 10.000       ; 0.008      ; 1.201      ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk1'                                                                                                                                                                                                         ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                                  ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|instruction_register_WE  ; clk1         ; clk1        ; 0.000        ; 0.000      ; 0.367      ;
+; 0.293 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.000      ; 0.445      ;
+; 0.553 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.002     ; 0.703      ;
+; 0.599 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.002     ; 0.749      ;
+; 0.685 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; 0.000      ; 0.837      ;
+; 0.712 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.002     ; 0.862      ;
+; 0.809 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; 0.000      ; 0.961      ;
+; 0.901 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|ALU_operation            ; clk1         ; clk1        ; 0.000        ; -0.002     ; 1.051      ;
+; 0.905 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.059      ;
+; 0.905 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.059      ;
+; 0.905 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.059      ;
+; 0.905 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.059      ;
+; 0.906 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.008      ; 1.066      ;
+; 0.954 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.026      ;
+; 0.958 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.008      ; 1.118      ;
+; 0.965 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.119      ;
+; 0.965 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.119      ;
+; 0.965 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.119      ;
+; 0.965 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 0.000        ; 0.002      ; 1.119      ;
+; 0.971 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; -0.088     ; 1.035      ;
+; 1.001 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.073      ;
+; 1.017 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.089      ;
+; 1.027 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; -0.008     ; 1.171      ;
+; 1.041 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.008      ; 1.201      ;
+; 1.090 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.162      ;
+; 1.118 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.190      ;
+; 1.119 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.191      ;
+; 1.171 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|ALU_enable               ; clk1         ; clk1        ; 0.000        ; 0.000      ; 1.323      ;
+; 1.194 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 0.000        ; 0.000      ; 1.346      ;
+; 1.227 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 0.000        ; -0.246     ; 1.133      ;
+; 1.264 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.336      ;
+; 1.277 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.296     ; 1.133      ;
+; 1.278 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.296     ; 1.134      ;
+; 1.296 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|accumulator_enable[1]    ; clk1         ; clk1        ; 0.000        ; -0.088     ; 1.360      ;
+; 1.333 ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out             ; clk1         ; clk1        ; 0.000        ; -0.246     ; 1.239      ;
+; 1.334 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.294     ; 1.192      ;
+; 1.335 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]  ; clk1         ; clk1        ; 0.000        ; 0.008      ; 1.495      ;
+; 1.395 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.259      ;
+; 1.475 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.339      ;
+; 1.484 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|accumulator_enable[0]    ; clk1         ; clk1        ; 0.000        ; -0.080     ; 1.556      ;
+; 1.490 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.354      ;
+; 1.520 ; D0_D3[3]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]          ; clk1         ; clk1        ; 0.000        ; 1.636      ; 1.558      ;
+; 1.537 ; D0_D3[2]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]          ; clk1         ; clk1        ; 0.000        ; 1.636      ; 1.575      ;
+; 1.682 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.594     ; 1.240      ;
+; 1.696 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.594     ; 1.254      ;
+; 1.721 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.585      ;
+; 1.778 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.602     ; 1.328      ;
+; 1.782 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.646      ;
+; 1.786 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.594     ; 1.344      ;
+; 1.857 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|temp_register_enable     ; clk1         ; clk1        ; 0.000        ; -0.594     ; 1.415      ;
+; 1.866 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.730      ;
+; 1.949 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.296     ; 1.805      ;
+; 1.955 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.296     ; 1.811      ;
+; 1.955 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.296     ; 1.811      ;
+; 1.955 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.296     ; 1.811      ;
+; 1.955 ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.296     ; 1.811      ;
+; 1.986 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.850      ;
+; 2.044 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.908      ;
+; 2.128 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.288     ; 1.992      ;
+; 2.159 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[0]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.023      ;
+; 2.274 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.138      ;
+; 2.277 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.141      ;
+; 2.277 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.141      ;
+; 2.277 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.141      ;
+; 2.277 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.141      ;
+; 2.332 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.196      ;
+; 2.335 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.199      ;
+; 2.335 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.199      ;
+; 2.335 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.199      ;
+; 2.335 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.199      ;
+; 2.417 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.281      ;
+; 2.420 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.284      ;
+; 2.420 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.284      ;
+; 2.420 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.284      ;
+; 2.420 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.284      ;
+; 2.424 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_I_WE      ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.288      ;
+; 2.712 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_IO[1]     ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.576      ;
+; 2.715 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[1] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.579      ;
+; 2.715 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[2] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.579      ;
+; 2.715 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[3] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.579      ;
+; 2.715 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ; Control_Unit:Control_Unit_1|index_register_select[0] ; clk1         ; clk1        ; 0.000        ; -0.288     ; 2.579      ;
+; 3.275 ; D0_D3[1]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]          ; clk1         ; clk1        ; 0.000        ; 1.636      ; 3.313      ;
+; 3.510 ; D0_D3[0]                                                                                   ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]          ; clk1         ; clk1        ; 0.000        ; 1.636      ; 3.548      ;
+; 4.007 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -1.546     ; 2.361      ;
+; 4.094 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.368      ;
+; 4.103 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.377      ;
+; 4.156 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.430      ;
+; 4.172 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -1.546     ; 2.526      ;
+; 4.174 ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -1.546     ; 2.528      ;
+; 4.204 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.478      ;
+; 4.206 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.480      ;
+; 4.226 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[0]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.500      ;
+; 4.226 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ; data_bus[2]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.500      ;
+; 4.235 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[0]                                          ; clk1         ; clk1        ; 0.000        ; -1.388     ; 2.747      ;
+; 4.261 ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ; data_bus[1]                                          ; clk1         ; clk1        ; 0.000        ; -1.388     ; 2.773      ;
+; 4.277 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.551      ;
+; 4.289 ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ; data_bus[3]                                          ; clk1         ; clk1        ; 0.000        ; -1.546     ; 2.643      ;
+; 4.289 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[0]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.563      ;
+; 4.289 ; Control_Unit:Control_Unit_1|ALU_enable                                                     ; data_bus[2]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.563      ;
+; 4.290 ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ; data_bus[0]                                          ; clk1         ; clk1        ; 0.000        ; -1.626     ; 2.564      ;
++-------+--------------------------------------------------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk1'                                                                                                                                     ;
++-------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                     ;
++-------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------------------------------------------+
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_enable                                                     ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_enable                                                     ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_operation                                                  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|ALU_operation                                                  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[0]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|accumulator_enable[1]                                          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|data_bus_buffer_path[0]                                        ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[0]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[0]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[1]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_IO[1]                                           ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_I_WE                                            ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_I_WE                                            ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[0]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[0]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[1]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[1]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[2]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[2]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[3]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|index_register_select[3]                                       ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|instruction_register_WE                                        ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|temp_register_enable                                           ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit:Control_Unit_1|temp_register_enable                                           ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out                                                   ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[0]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[1]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[2]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer:Data_Bus_Buffer_1|buffer[3]                                                ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[0] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[1] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[2] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[3] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[4] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[5] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[6] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder:Instruction_Register_and_Decoder_1|instruction_decoder[7] ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|ALU_enable|clk                                                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|ALU_enable|clk                                                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|ALU_operation|clk                                                           ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|ALU_operation|clk                                                           ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[0]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[0]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[1]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|accumulator_enable[1]|clk                                                   ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|data_bus_buffer_path[0]|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|data_bus_buffer_path[0]|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[0]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[0]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[1]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_IO[1]|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_I_WE|clk                                                     ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_I_WE|clk                                                     ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[0]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[0]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[1]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[1]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[2]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[2]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|index_register_select[3]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|index_register_select[3]|clk                                                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|instruction_register_WE|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|instruction_register_WE|clk                                                 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Control_Unit_1|temp_register_enable|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Control_Unit_1|temp_register_enable|clk                                                    ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|WE_out|clk                                                               ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|WE_out|clk                                                               ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[0]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[0]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[1]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[1]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[2]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[2]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[3]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Data_Bus_Buffer_1|buffer[3]|clk                                                            ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[0]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[0]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[1]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[1]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[2]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[2]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[3]|clk                              ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; clk1  ; Rise       ; Instruction_Register_and_Decoder_1|instruction_decoder[3]|clk                              ;
++-------+--------------+----------------+------------------+-------+------------+--------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'altera_reserved_tck'                                                       ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; Slack  ; Actual Width ; Required Width ; Type      ; Clock               ; Clock Edge ; Target              ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+; 97.778 ; 100.000      ; 2.222          ; Port Rate ; altera_reserved_tck ; Rise       ; altera_reserved_tck ;
++--------+--------------+----------------+-----------+---------------------+------------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D0_D3[*]  ; clk1       ; 1.880  ; 1.880  ; Rise       ; clk1            ;
+;  D0_D3[0] ; clk1       ; 1.880  ; 1.880  ; Rise       ; clk1            ;
+;  D0_D3[1] ; clk1       ; 1.645  ; 1.645  ; Rise       ; clk1            ;
+;  D0_D3[2] ; clk1       ; -0.093 ; -0.093 ; Rise       ; clk1            ;
+;  D0_D3[3] ; clk1       ; -0.110 ; -0.110 ; Rise       ; clk1            ;
+; reset     ; clk1       ; 3.452  ; 3.452  ; Rise       ; clk1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D0_D3[*]  ; clk1       ; 0.230  ; 0.230  ; Rise       ; clk1            ;
+;  D0_D3[0] ; clk1       ; -1.760 ; -1.760 ; Rise       ; clk1            ;
+;  D0_D3[1] ; clk1       ; -1.525 ; -1.525 ; Rise       ; clk1            ;
+;  D0_D3[2] ; clk1       ; 0.213  ; 0.213  ; Rise       ; clk1            ;
+;  D0_D3[3] ; clk1       ; 0.230  ; 0.230  ; Rise       ; clk1            ;
+; reset     ; clk1       ; -3.332 ; -3.332 ; Rise       ; clk1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; carry_out    ; clk1       ; 4.947 ; 4.947 ; Rise       ; clk1            ;
+; data_bus[*]  ; clk1       ; 4.748 ; 4.748 ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 4.748 ; 4.748 ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 4.443 ; 4.443 ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 4.598 ; 4.598 ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 4.474 ; 4.474 ; Rise       ; clk1            ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; carry_out    ; clk1       ; 4.318 ; 4.318 ; Rise       ; clk1            ;
+; data_bus[*]  ; clk1       ; 3.907 ; 3.907 ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 4.135 ; 4.135 ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 3.907 ; 3.907 ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 4.205 ; 4.205 ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 3.994 ; 3.994 ; Rise       ; clk1            ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Output Enable Times                                                     ;
++--------------+------------+-------+------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 4.506 ;      ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 4.528 ;      ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 4.506 ;      ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 4.528 ;      ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 4.515 ;      ; Rise       ; clk1            ;
++--------------+------------+-------+------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Output Enable Times                                             ;
++--------------+------------+-------+------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 4.104 ;      ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 4.126 ;      ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 4.104 ;      ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 4.126 ;      ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 4.113 ;      ; Rise       ; clk1            ;
++--------------+------------+-------+------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------+
+; Output Disable Times                                                             ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; Data Port    ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 4.506     ;           ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 4.528     ;           ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 4.506     ;           ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 4.528     ;           ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 4.515     ;           ; Rise       ; clk1            ;
++--------------+------------+-----------+-----------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                     ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; Data Port    ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++--------------+------------+-----------+-----------+------------+-----------------+
+; data_bus[*]  ; clk1       ; 4.104     ;           ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 4.126     ;           ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 4.104     ;           ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 4.126     ;           ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 4.113     ;           ; Rise       ; clk1            ;
++--------------+------------+-----------+-----------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                             ;
++----------------------+-------+-------+----------+---------+---------------------+
+; Clock                ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------+-------+-------+----------+---------+---------------------+
+; Worst-case Slack     ; 0.322 ; 0.215 ; N/A      ; N/A     ; 4.000               ;
+;  altera_reserved_tck ; N/A   ; N/A   ; N/A      ; N/A     ; 97.778              ;
+;  clk1                ; 0.322 ; 0.215 ; N/A      ; N/A     ; 4.000               ;
+; Design-wide TNS      ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  altera_reserved_tck ; N/A   ; N/A   ; N/A      ; N/A     ; 0.000               ;
+;  clk1                ; 0.000 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++----------------------+-------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; D0_D3[*]  ; clk1       ; 3.517 ; 3.517 ; Rise       ; clk1            ;
+;  D0_D3[0] ; clk1       ; 3.517 ; 3.517 ; Rise       ; clk1            ;
+;  D0_D3[1] ; clk1       ; 3.195 ; 3.195 ; Rise       ; clk1            ;
+;  D0_D3[2] ; clk1       ; 0.253 ; 0.253 ; Rise       ; clk1            ;
+;  D0_D3[3] ; clk1       ; 0.244 ; 0.244 ; Rise       ; clk1            ;
+; reset     ; clk1       ; 5.968 ; 5.968 ; Rise       ; clk1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; D0_D3[*]  ; clk1       ; 0.230  ; 0.230  ; Rise       ; clk1            ;
+;  D0_D3[0] ; clk1       ; -1.760 ; -1.760 ; Rise       ; clk1            ;
+;  D0_D3[1] ; clk1       ; -1.525 ; -1.525 ; Rise       ; clk1            ;
+;  D0_D3[2] ; clk1       ; 0.213  ; 0.213  ; Rise       ; clk1            ;
+;  D0_D3[3] ; clk1       ; 0.230  ; 0.230  ; Rise       ; clk1            ;
+; reset     ; clk1       ; -3.332 ; -3.332 ; Rise       ; clk1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; carry_out    ; clk1       ; 9.426 ; 9.426 ; Rise       ; clk1            ;
+; data_bus[*]  ; clk1       ; 8.978 ; 8.978 ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 8.978 ; 8.978 ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 8.388 ; 8.388 ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 8.877 ; 8.877 ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 8.652 ; 8.652 ; Rise       ; clk1            ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; carry_out    ; clk1       ; 4.318 ; 4.318 ; Rise       ; clk1            ;
+; data_bus[*]  ; clk1       ; 3.907 ; 3.907 ; Rise       ; clk1            ;
+;  data_bus[0] ; clk1       ; 4.135 ; 4.135 ; Rise       ; clk1            ;
+;  data_bus[1] ; clk1       ; 3.907 ; 3.907 ; Rise       ; clk1            ;
+;  data_bus[2] ; clk1       ; 4.205 ; 4.205 ; Rise       ; clk1            ;
+;  data_bus[3] ; clk1       ; 3.994 ; 3.994 ; Rise       ; clk1            ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk1       ; clk1     ; 165      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk1       ; clk1     ; 165      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 7     ; 7    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 76    ; 76   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 10    ; 10   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Dec 11 11:21:01 2017
+Info: Command: quartus_sta processor_4004 -c 4004
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 85 combinational loops as latches.
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity sld_jtag_hub
+        Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
+        Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
+Info (332104): Reading SDC File: '4004.sdc'
+Warning (332060): Node: clk_1 was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Control_Unit:Control_Unit_1|accumulator_enable[0] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Control_Unit:Control_Unit_1|temp_register_enable was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: reset was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Index_Register:Index_Register_1|reg_IO was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Control_Unit:Control_Unit_1|index_register_IO[0] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out was determined to be a clock but was found without an associated clock assignment.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 0.322
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.322         0.000 clk1 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 clk1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 4.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     4.000         0.000 clk1 
+    Info (332119):    97.778         0.000 altera_reserved_tck 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Warning (332060): Node: clk_1 was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Control_Unit:Control_Unit_1|accumulator_enable[0] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Control_Unit:Control_Unit_1|temp_register_enable was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: reset was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Index_Register:Index_Register_1|reg_IO was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Control_Unit:Control_Unit_1|index_register_IO[0] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: Data_Bus_Buffer:Data_Bus_Buffer_1|WE_out was determined to be a clock but was found without an associated clock assignment.
+Info (332146): Worst-case setup slack is 4.552
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     4.552         0.000 clk1 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 clk1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 4.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     4.000         0.000 clk1 
+    Info (332119):    97.778         0.000 altera_reserved_tck 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 553 megabytes
+    Info: Processing ended: Mon Dec 11 11:21:03 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

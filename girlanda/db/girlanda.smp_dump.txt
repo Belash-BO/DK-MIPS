@@ -1,0 +1,5 @@
+
+State Machine - |girlanda|counter
+Name counter.01 
+counter.00 0 
+counter.01 1 

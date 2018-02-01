@@ -1,0 +1,120 @@
+D:/Quartus_Labs/lab_6/Control.v {1 {vlog -work work D:/Quartus_Labs/lab_6/Control.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Control
+
+Top level modules:
+	Control
+
+} {} {}} D:/Quartus_Labs/lab_6/sum4.v {1 {vlog -work work D:/Quartus_Labs/lab_6/sum4.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sum4
+
+Top level modules:
+	sum4
+
+} {} {}} D:/Quartus_Labs/lab_6/ALU.v {1 {vlog -work work D:/Quartus_Labs/lab_6/ALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/Quartus_Labs/lab_6/Rom.v {1 {vlog -work work D:/Quartus_Labs/lab_6/Rom.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Rom
+
+Top level modules:
+	Rom
+
+} {} {}} D:/Quartus_Labs/lab_6/regFile.v {1 {vlog -work work D:/Quartus_Labs/lab_6/regFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module regFile
+
+Top level modules:
+	regFile
+
+} {} {}} D:/Quartus_Labs/lab_6/Extender.v {1 {vlog -work work D:/Quartus_Labs/lab_6/Extender.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Extender
+
+Top level modules:
+	Extender
+
+} {} {}} D:/Quartus_Labs/lab_6/Adder.v {1 {vlog -work work D:/Quartus_Labs/lab_6/Adder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} D:/Quartus_Labs/lab_6/Ram.v {1 {vlog -work work D:/Quartus_Labs/lab_6/Ram.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Ram
+
+Top level modules:
+	Ram
+
+} {} {}} D:/Quartus_Labs/lab_6/MIPS.v {1 {vlog -work work D:/Quartus_Labs/lab_6/MIPS.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MIPS
+
+Top level modules:
+	MIPS
+
+} {} {}} D:/Quartus_Labs/lab_6/signExtend.v {1 {vlog -work work D:/Quartus_Labs/lab_6/signExtend.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module signExtend
+
+Top level modules:
+	signExtend
+
+} {} {}} D:/Quartus_Labs/lab_6/next_pc.v {1 {vlog -work work D:/Quartus_Labs/lab_6/next_pc.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module next_pc
+
+Top level modules:
+	next_pc
+
+} {} {}} D:/Quartus_Labs/lab_6/Alu_Control.v {1 {vlog -work work D:/Quartus_Labs/lab_6/Alu_Control.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Alu_Control
+
+Top level modules:
+	Alu_Control
+
+} {} {}} D:/Quartus_Labs/lab_6/pc.v {1 {vlog -work work D:/Quartus_Labs/lab_6/pc.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} D:/Quartus_Labs/lab_6/mux2in1.v {1 {vlog -work work D:/Quartus_Labs/lab_6/mux2in1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2in1
+
+Top level modules:
+	mux2in1
+
+} {} {}} D:/Quartus_Labs/lab_6/Shifter.v {1 {vlog -work work D:/Quartus_Labs/lab_6/Shifter.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Shifter
+
+Top level modules:
+	Shifter
+
+} {} {}} D:/Quartus_Labs/lab_6/LogicUnit.v {1 {vlog -work work D:/Quartus_Labs/lab_6/LogicUnit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LogicUnit
+
+Top level modules:
+	LogicUnit
+
+} {} {}} D:/Quartus_Labs/lab_6/MIPS_tb.v {1 {vlog -work work D:/Quartus_Labs/lab_6/MIPS_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MIPS_tb
+
+Top level modules:
+	MIPS_tb
+
+} {} {}}

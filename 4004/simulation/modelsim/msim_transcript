@@ -1,0 +1,37 @@
+# Reading D:/Quartus_13/modelsim_ase/tcl/vsim/pref.tcl 
+# do 4004_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Quartus_13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Quartus_13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quartus_Labs/4004 {D:/Quartus_Labs/4004/Instruction_Register_and_Decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Instruction_Register_and_Decoder
+# 
+# Top level modules:
+# 	Instruction_Register_and_Decoder
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quartus_Labs/4004 {D:/Quartus_Labs/4004/Instruction_Register_and_Decoder_TESTBENCH.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Instruction_Register_and_Decoder_TESTBENCH
+# 
+# Top level modules:
+# 	Instruction_Register_and_Decoder_TESTBENCH
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Instruction_Register_and_Decoder_TESTBENCH
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Instruction_Register_and_Decoder_TESTBENCH 
+# Loading work.Instruction_Register_and_Decoder_TESTBENCH
+# Loading work.Instruction_Register_and_Decoder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns

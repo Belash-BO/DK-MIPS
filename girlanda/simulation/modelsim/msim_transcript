@@ -1,0 +1,53 @@
+# Reading D:/Quartus13/modelsim_ase/tcl/vsim/pref.tcl 
+# do girlanda_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Quartus13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Quartus13\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quartus_Labs/girlanda {D:/Quartus_Labs/girlanda/girlanda.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module girlanda
+# 
+# Top level modules:
+# 	girlanda
+# vlog -vlog01compat -work work +incdir+D:/Quartus_Labs/girlanda {D:/Quartus_Labs/girlanda/rejim.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rejim
+# 
+# Top level modules:
+# 	rejim
+# 
+# vlog -vlog01compat -work work +incdir+D:/Quartus_Labs/girlanda {D:/Quartus_Labs/girlanda/girlanda_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module girlanda_tb
+# 
+# Top level modules:
+# 	girlanda_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  girlanda_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps girlanda_tb 
+# Loading work.girlanda_tb
+# Loading work.girlanda
+# Loading work.rejim
+# ** Warning: (vsim-3015) D:/Quartus_Labs/girlanda/girlanda_tb.v(10): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'red'. The port definition is at: D:/Quartus_Labs/girlanda/girlanda.v(3).
+# 
+#         Region: /girlanda_tb/girlanda_1
+# ** Warning: (vsim-3015) D:/Quartus_Labs/girlanda/girlanda_tb.v(10): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'green'. The port definition is at: D:/Quartus_Labs/girlanda/girlanda.v(3).
+# 
+#         Region: /girlanda_tb/girlanda_1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module girlanda_tb at D:/Quartus_Labs/girlanda/girlanda_tb.v line 35
+# Simulation Breakpoint: Break in Module girlanda_tb at D:/Quartus_Labs/girlanda/girlanda_tb.v line 35
+# MACRO ./girlanda_run_msim_rtl_verilog.do PAUSED at line 18
