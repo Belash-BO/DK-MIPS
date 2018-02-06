@@ -1,0 +1,19 @@
+git clone https://github.com/Belash-BO/dk-mips.git
+ls
+git branch dev 
+
+git branch  --list
+
+git checkout dev
+git status
+git add .
+git status
+
+git commit -m "+ basic readme"
+
+git push origin Punov
+
+git log 
+
+
+
